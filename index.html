@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <title>view</title>
+    <script> 
+        $(document).ready(function(){
+          $(".table_sum").click(function(){
+            $(".table_order").slideToggle("slow");
+          });
+        });
+</script>
+</head>
+<body>
+    
+    <nav class="navbar">
+    <div class="box_manu">
+        <i class="manu">หมวดหมู่</i>
+        <ul class="main_manu">
+            <li class="first_manu">เครื่องดื่ม
+                <ul class="secon_manu">
+                    <li><a href="#">เครื่องดื่มมีแอลกอฮอลล์</a></li>
+                    <li>เครื่องดื่มชูกำลัง</li>
+                    <li class="no_l_manu">เครื่องดืมไม่มีแอลกอฮอลล์ 
+                        <ul class="no_l_manu_1">
+                            <li><a href="#">น้ำชา</a></li>
+                            <li><a href="#">โซดา</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="first_manu">ขนมขบเคี้ยว</li>
+            <li class="first_manu">นมกล่องUHT</li>
+            <li class="first_manu">ของใช้ส่วนตัว
+                <ul class="secon_manu">
+                    <li>สบู่</li>
+                    <li>แชมพู,ครีมนวด</li>
+                    <li>ยาสีฟัน,แปรงสีฟัน</li>
+                    <li>ครีม</li>
+                    <li>โฟมล้างหน้า</li>
+                </ul>
+            </li>
+            <li class="first_manu">ผลิตภันฑ์ทำความสะอาด
+                <ul class="secon_manu">
+                    <li>ทำความสะอาดพื้น</li>
+                    <li>น้ำยาล้างจาน</li>
+                    <li>ผงซักผ้า</li>
+                    <li>ปรับผ้านุ่ม</li>
+                    <li>น้ำยารีดผ้า</li>
+                </ul>
+            </li>
+            <li class="first_manu"></li>
+        </ul>
+    </div>
+    <input class="search" type="text" placeholder="ค้นหาสินค้า">
+</nav>
+<div class="containner">
+    <div class="box_products">
+        <div class="image">
+            <img class="img_product" src="./img/ฟันโอ 5บ..png" alt="">
+        
+        </div>
+        <p class="product_name">ชื่อสินค้า</p>
+        <div class="detail_ather">
+            <div class="unit"><p>หน่วย</p></div>
+            <div class="price"><p>ราคา (บ.)</p></div><br>
+            <div class="unit_value"></div>
+            <div class="price_value"></div>
+        </div>
+        <div class="box_input_amount">
+            <input class="input_amount" type="number" name="" id="">
+        </div>
+</div>
+<div class="box_products">
+    <div class="image">
+        <img class="img_product" src="./img/ฟันโอ 5บ..png" alt="">
+    
+    </div>
+    <p class="product_name">ชื่อสินค้า</p>
+    <div class="detail_ather">
+        <div class="unit"><p>หน่วย</p></div>
+        <div class="price"><p>ราคา (บ.)</p></div><br>
+        <div class="unit_value"></div>
+        <div class="price_value"></div>
+    </div>
+    <div class="box_input_amount">
+        <input class="input_amount" type="number" name="" id="">
+    </div>
+</div>
+<div class="box_products">
+    <div class="image">
+        <img class="img_product" src="./img/ฟันโอ 5บ..png" alt="">
+    
+    </div>
+    <p class="product_name">ชื่อสินค้า</p>
+    <div class="detail_ather">
+        <div class="unit"><p>หน่วย</p></div>
+        <div class="price"><p>ราคา (บ.)</p></div><br>
+        <div class="unit_value"></div>
+        <div class="price_value"></div>
+    </div>
+    <div class="box_input_amount">
+        <input class="input_amount" type="number" name="" id="">
+    </div>
+</div>
+<div class="box_products">
+    <div class="image">
+        <img class="img_product" src="./img/ฟันโอ 5บ..png" alt="">
+    
+    </div>
+    <p class="product_name">ชื่อสินค้า</p>
+    <div class="detail_ather">
+        <div class="unit"><p>หน่วย</p></div>
+        <div class="price"><p>ราคา (บ.)</p></div><br>
+        <div class="unit_value"></div>
+        <div class="price_value"></div>
+    </div>
+    <div class="box_input_amount">
+        <input class="input_amount" type="number" name="" id="">
+    </div>
+</div>
+
+
+<footer>
+    <div class="box_order_list">
+        <table class="table_order">
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>หน่วย</th>
+                    <th>ราคา</th>
+                    <th>จำนวน</th>
+                    <th>รวม</th>
+                    <th>แก้ไข</th>
+                </tr>              
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr> <tr>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>แก้ไข ลบ</td>
+                </tr>
+        </table> 
+        <table class="table_sum">          
+                <tr>
+                <td colspan="3">1</td>
+                <td colspan="4">2</td>
+            </tr>
+            <tr>
+                <td colspan="3">จำนวนรายการ</td>
+                <td colspan="4">ยอดรวม</td>
+            </tr>
+        </table> 
+    </div>
+</footer>
+</div>
+</body>
+</html>
